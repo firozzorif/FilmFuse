@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            font-family: 'Arial', sans-serif;
+        }
+        .ticket {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: #e6d4b5;
+            padding: 20px;
+            border: 2px dashed #000;
+            border-radius: 10px;
+            position: relative;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+        .ticket:before, .ticket:after {
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 50px;
+            transform: translateY(-50%);
+            background-color: #e6d4b5;
+            border: 2px solid #000;
+        }
+        .ticket:before {
+            left: -17px;
+            border-radius: 10px 50% 50% 10px;
+        }
+        .ticket:after {
+            right: -17px;
+            border-radius: 50% 10px 10px 50%;
+        }
+        .ticket .left-part, .ticket .right-part {
+            padding: 20px;
+        }
+        .ticket .right-part {
+            border-left: 2px solid #000;
+            padding-left: 40px;
+            text-align: center;
+        }
+        .ticket .title {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .ticket .details, .ticket .additional {
+            display: flex;
+            flex-direction: column;
+        }
+        .ticket .details span, .ticket .additional div {
+            margin: 5px 0;
+        }
+        .ticket .additional div {
+            border: 2px solid #000;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .qr-code {
+            width: 100px; /* Adjust the size as needed */
+            height: 100px; /* Adjust the size as needed */
+        }
+    </style>
+</head>
+<body>
+    <div class="ticket">
+        <div class="left-part">
+            <div class="title">MOVIE TIME</div>
+            <div class="details">
+                <span>08:00 PM</span>
+                <span>PVR Orion Mall, Bengaluru</span>
+            </div>
+            <div class="additional" id="additionalInfo">
+                <!-- Selected seats will be dynamically added here -->
+            </div>
+        </div>
+        <div class="right-part">
+            <div id="showTime">08:00 PM</div>
+            <div id="location">PVR Orion Mall, Bengaluru</div>
+            <div id="selectedSeatsDisplay">
+                <!-- Selected seats summary will be dynamically added here -->
+            </div>
+            <img src="IMG/QRCode.png" alt="QR Code" class="qr-code">
+        </div>
+    </div>
+
+    <script>
+        let selectedSeats = ['G2', 'F7', 'A5', 'C7'];
+
+        function updateTicketInfo(selectedSeats) {
+            let additionalInfo = document.getElementById('additionalInfo');
+            let selectedSeatsDisplay = document.getElementById('selectedSeatsDisplay');
+
+            additionalInfo.innerHTML = ''; 
+            selectedSeatsDisplay.innerHTML = ''; 
+
+            let theaterInfo = document.createElement('div');
+            theaterInfo.textContent = 'Screen 1';
+            theaterInfo.classList.add('theater-info');
+            additionalInfo.appendChild(theaterInfo);
+
+            let selectedSeatsText = selectedSeats.join(', ');
+            let seatInfo = document.createElement('div');
+            seatInfo.textContent = selectedSeatsText;
+            seatInfo.classList.add('selected-seats');
+            additionalInfo.appendChild(seatInfo);
+
+            let seatDisplay = document.createElement('div');
+            seatDisplay.textContent = selectedSeatsText;
+            seatDisplay.classList.add('selected-seat-summary');
+            selectedSeatsDisplay.appendChild(seatDisplay);
+        }
+
+        updateTicketInfo(selectedSeats);
+    </script>
+</body>
+</html>

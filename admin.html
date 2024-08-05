@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            <h1>Admin Dashboard</h1>
+            <div id="seatDisplay" style="display: none;">
+                <div class="movie-container">
+                    <select id="movie">
+                        <option value="650">Gold - ₹200</option>
+                    </select>
+                </div>
+                <ul class="showcase">
+                    <li>
+                        <div class="seat"></div>
+                        <small>All Seats</small>
+                    </li>
+                </ul>
+                <div class="container">
+                    <div class="movie-screen">
+                        <img src="Screen.jpg" alt="screen">
+                    </div>
+                    <div class="row-container" id="seatsGrid">
+                        <!-- Seats grid will be dynamically generated here -->
+                    </div>
+                </div>
+            </div>
+            <div class="main-content">
+                <div id="screenList">
+                    <h2>Screens</h2>
+                    <ul id="screens">
+                        <!-- Buttons for Screen 1 will be dynamically added here -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>

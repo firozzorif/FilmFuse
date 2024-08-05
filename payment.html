@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="css/payment.css">
+    <script>
+        function confirmPayment() {
+            // Show alert
+            alert("Payment Successful");
+
+            // Redirect after a short delay
+            setTimeout(function() {
+                window.location.href = 'ticket.html';
+            }, 1000); // 1000 milliseconds = 1 second
+        }
+
+        function cancelPayment() {
+            // Redirect immediately
+            window.location.href = 'homepage.html';
+        }
+    </script>
+</head>
+<body>
+    <fieldset>
+        <!-- Payment Page -->
+        <div id="payment_div">
+            <div class="payment-row">
+                <div class="col-75">
+                    <div class="payment-container">
+                        <div class="payment-row">
+                            <div class="col-50">
+                                <h3 id="payment-h3">Payment</h3>
+                                <div class="payment-row payment">
+                                    <div class="col-50 payment">
+                                        <label for="card" class="method card">
+                                            <div class="icon-container">
+                                                <i class="fa fa-cc-visa" style="color: navy"></i>
+                                                <i class="fa fa-cc-amex" style="color: blue"></i>
+                                                <i class="fa fa-cc-mastercard" style="color: red"></i>
+                                                <i class="fa fa-cc-discover" style="color: orange"></i>
+                                            </div>
+                                            <div class="radio-input">
+                                                Pay RS.600.00 with credit card
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div id="img">
+                                    <img src="IMG/CCDC.jpeg" alt="Debit Card">
+                                </div>
+                                <div class="payment-row">
+                                    <div class="col-50">
+                                        <label for="cname">Cardholder's Name</label>
+                                        <input type="text" id="cname" name="cardname" placeholder="Firstname Lastname" required />
+                                    </div>
+                                    <div class="col-50">
+                                        <label for="ccnum">Credit card number</label>
+                                        <input type="text" id="ccnum" name="cardnumber" placeholder="xxxx-xxxx-xxxx-xxxx" required />
+                                    </div>
+                                </div>
+                                <div class="payment-row">
+                                    <div class="col-50">
+                                        <label for="expmonth">Exp Month</label>
+                                        <input type="text" id="expmonth" name="expmonth" placeholder="September" required />
+                                    </div>
+                                    <div class="col-50">
+                                        <div class="payment-row">
+                                            <div class="col-50">
+                                                <label for="expyear">Exp Year</label>
+                                                <input type="text" id="expyear" name="expyear" placeholder="yyyy" required />
+                                            </div>
+                                            <div class="col-50">
+                                                <label for="cvv">CVV</label>
+                                                <input type="text" id="cvv" name="cvv" placeholder="xxx" required />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <input type="button" name="next-step" class="next-step pay-btn" value="Confirm Payment" onclick="confirmPayment()" />
+        <input type="button" name="previous-step" class="cancel-pay-btn" value="Cancel Payment" onclick="cancelPayment()" />
+    </fieldset>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>

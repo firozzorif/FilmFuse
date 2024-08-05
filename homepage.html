@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FimFuse</title>
+    <link rel="stylesheet" href="css/homepage.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+   
+</head>
+<body>
+  
+  <!-- nav bar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">FimFuse</a> 
+          <br><br><br>
+
+          <style>
+            input[type=text] {
+              width: 150px;
+              box-sizing: border-box;
+              border: 3px solid black;
+              border-radius: 4px;
+              font-size: 15px;
+              background-color: white;
+              
+              background-position: 10px 20px; 
+              background-repeat: no-repeat;
+              padding: 6px 10px 6px 20px;
+              transition: width 0.2s ;
+            }
+            
+            input[type=text]:focus {
+              width: 200%;
+            }
+            </style>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="homepage.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Movies.html">Movies</a>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#movies">Now Showing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="AboutUs.html">About Us</a>
+                <br> <br>
+             </ul>
+
+        </div>
+      </nav>
+
+      <!--image slides carosel-->
+      <div id=UM>
+        <h1>Upcoming Movies</h1> 
+      </div> 
+      <section id="slides">
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3 col-md-6">
+                            <img src="Mimages/Stree2.jpeg" class="d-block w-100" alt="Slide 1">
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <img src="Mimages/HTPC.jpeg" class="d-block w-100" alt="Slide 2">
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <img src="Mimages/GOAT.jpeg" class="d-block w-100" alt="Slide 3">
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <img src="Mimages/DI.jpeg" class="d-block w-100" alt="Slide 4">
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                          <img src="Mimages/SNE.jpeg" class="d-block w-100" alt="Slide 4">
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                          <img src="Mimages/FPM.jpeg" class="d-block w-100" alt="Slide 4">
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                          <img src="Mimages/VEDHA.jpeg" class="d-block w-100" alt="Slide 4">
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                          <img src="Mimages/THNGALAN.jpeg" class="d-block w-100" alt="Slide 4">
+                        </div>
+                        <!-- Add more images as needed -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+  
+      </div>
+
+<!-- home -->
+     <section id="home">
+          <h1 class="text-center">FilmFuse</h1>
+          <p>Book Your Ticket From Anywhere In The World</p>
+          <div class="input-group m-4"></div>  
+      </section>
+
+      <!--Movie Cards -->
+
+      <section id="movies">
+        <div class="container m-5">
+          <h1 class="text-center my-5">Now Showing</h1>
+          <div class="row">
+              <div class="col-lg-4 col-md-4 col-12">
+                  <div class="card">
+                      <img src="Mimages/DPWV.jpeg" class="card-img-top">
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Deadpool & Wolverine</h5>
+                        <a href="ShowTimings.html" class="btn btn-warning">BOOK NOW</a>
+                      </div>
+                    </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-12">
+                  <div class="card">
+                      <img src="Mimages/Indian2.jpeg" class="card-img-top">
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Indian 2</h5>
+                        <a href="ShowTimings.html" class="btn btn-warning">BOOK NOW</a>
+                      </div>
+                    </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-12">
+                  <div class="card">
+                      <img src="Mimages/IVR.jpeg" class="card-img-top">
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Ishq Vishk Rebound</h5>
+                        <a href="ShowTimings.html" class="btn btn-warning">BOOK NOW</a>
+                      </div>
+                    </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-lg-4 col-md-4 col-12">
+                  <div class="card">
+                      <img src="Mimages/BNz.jpeg" class="card-img-top">
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Bad Newz</h5>
+                        <a href="ShowTimings.html" class="btn btn-warning">BOOK NOW</a>
+                      </div>
+                    </div>
+                  </div> 
+            
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card">
+                        <img src="Mimages/Sarfira.jpeg" class="card-img-top">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Sarfira</h5>
+                          <a href="ShowTimings.html" class="btn btn-warning">BOOK NOW</a>
+                        </div>
+                      </div>
+                </div>    
+                <div class="col-lg-4 col-md-4 col-12">
+                  <div class="card">
+                      <img src="Mimages/DM4.jpeg" class="card-img-top">
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Despicable Me 4</h5>
+                        <a href="ShowTimings.html" class="btn btn-warning">BOOK NOW</a>
+                      </div>
+                    </div>
+              </div>
+          </div> 
+
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="card">
+                    <img src="Mimages/Munjya.jpeg" class="card-img-top">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Munjya</h5>
+                      <a href="ShowTimings.html" class="btn btn-warning">BOOK NOW</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-12">
+                  <div class="card">
+                      <img src="Mimages/Kalki.jpeg" class="card-img-top">
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Kalki 2898 AD</h5>
+                        <a href="ShowTimings.html"  class="btn btn-warning">BOOK NOW</a>
+                      </div>
+                    </div>
+              </div>    
+              <div class="col-lg-4 col-md-4 col-12">
+                <div class="card">
+                    <img src="Mimages/IO2.jpeg" class="card-img-top">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Inside Out 2</h5>
+                      <a href="ShowTimings.html" class="btn btn-warning">BOOK NOW</a>
+                    </div>
+                  </div>
+            </div>
+        </div> 
+      </section>
+</body>
+</html>

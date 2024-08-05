@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Seats</title>
+    <link rel="stylesheet" href="css/seats.css">
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            <h1>Select Seats</h1>
+            <div class="movie-screen" id="movieScreen">
+                <img src="Images/Screen.jpg" alt="screen">
+            </div>
+            <div class="row-container" id="seatsGrid">
+                <!-- Seats grid will be dynamically generated here -->
+            </div>
+            <div id="ticketInfo" style="display: none;">
+                <h2>Ticket Information</h2>
+                <div id="selectedSeats"></div>
+                <div id="totalPrice"></div>
+            </div>
+            <button id="nextBtn">Next</button>
+        </div>
+    </div>
+    <script src="js/seats.js"></script>
+</body>
+</html>
