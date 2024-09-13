@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    background-color: #7bdebd;
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: .5rem 5rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, .5);
+    background: black;
+}
+
+.navbar .navbar-brand {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 1000;
+    color: orange;
+}
+
+#navbarSupportedContent a {
+    color: red;
+    border-bottom: 2px solid transparent;
+}
+
+#navbarSupportedContent a:hover {
+    border-bottom: 4px solid rgb(247, 64, 8);
+}
+
+section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #7bdebd;
+}
+
+#UM {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #0109126a;
+    border-radius: 10px;
+    background-color: #e8c654a1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    max-width: 600px;
+    background: rgba(221, 205, 205, 0.552);
+}
+
+UM h1 {
+    font-size: 2em;
+    color: #2c75be;
+    margin-bottom: 10px;
+}
+
+/*Slides*/
+#slides {
+    background: #7bdebd;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* Ensure images maintain aspect ratio */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+.carousel-indicators {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-indicators button {
+    background-color: white;
+    border-color: white;
+}
+
+.carousel-indicators .active {
+    background-color: orange;
+}
+
+.carousel-item img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+
+/* home */
+#home {
+    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .4)), url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+#home h1 {
+    font-size: 100px;
+    color: white;
+    letter-spacing: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+#home p {
+    color: white;
+    font-size: medium;
+}
+
+#home .input-group {
+    width: 40%;
+    height: 45px;
+}
+
+.signin {
+    background: green !important;
+    color: white !important;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, .3);
+}
+
+/* movie cards */
+
+#movies {
+    background: #7bdebd;
+    margin-top: 50px;
+}
+
+#movies h1 {
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+#movies img {
+    width: 200px;
+    height: 222px;
+}
+
+.card {
+    width: 200px;
+    height: 333px;
+    background: #e5e5e5 !important;
+    border: none !important;
+    box-shadow: 15px 20px 20px rgba(0, 0, 0, .3),
+        inset 4px 4px 10px white;
+    border-radius: 20px !important;
+    overflow: hidden;
+    justify-content: center;
+    margin: 20px 60px;
+    transition: .2s;
+}
+
+.card:hover {
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, .3),
+        inset -4px -4px 10px white;
+    transition: .2s;
+}
+
+#navbarr {
+    position: static;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: .5rem 5rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, .5);
+    background: black;
+}
+
+#navbarSupportedContent a {
+    color: #fff;
+    border-bottom: 2px solid transparent;
+}
+
+#navbarSupportedContent a:hover {
+    border-bottom: 2px solid #f7140c;
+}
+
+#navbarSupportedContent button {
+    background: #f0790b;
+    width: 5rem;
+    border-radius: 15px;
+}
+
+section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    width: 100%;
+    height: 30px;
+    background: rgba(0, 0, 0, .8);
+    margin-top: -30px;
+    text-align: center;
+    color: white;
+    padding: 3px;
+}
