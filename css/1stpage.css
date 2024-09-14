@@ -7,7 +7,7 @@ html,
 .masthead {
   /* padding-top: 10rem; */
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to left, rgba(1, 1, 1, 0.8) 0%, rgba(67, 8, 11, 0.8) 100%), url(i.png);
+  background: linear-gradient(to left, rgba(1, 1, 1, 0.8) 0%, rgba(67, 8, 11, 0.8) 100%), url(aa.png);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
